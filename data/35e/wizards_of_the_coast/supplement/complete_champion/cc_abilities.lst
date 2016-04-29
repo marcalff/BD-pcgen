@@ -561,9 +561,31 @@ Character Level	KEY:Scales of Balance ~ Character Level	CATEGORY:Church	TYPE:Sca
 
 ###Block: The Shining Light Of Pelor (SLP), One Time
 
-The Shining Light Of Pelor Membership	KEY:Shining Light Of Pelor ~ Membership	CATEGORY:Church	TYPE:Shining Light Of Pelor	PREDEITY:1,Pelor	DEFINE:SLPAffiliationScore|0	COST:0	BONUS:ABILITYPOOL|The Shining Light Of Pelor Rank|SLPAffiliationScore/100	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Character Level	DESC:Membership	SOURCEPAGE:p.6
+The Shining Light Of Pelor Membership	KEY:Shining Light Of Pelor ~ Membership	CATEGORY:Church	TYPE:Shining Light Of Pelor	PREDEITY:1,Pelor	DEFINE:SLPAffiliationScore|0	COST:0	BONUS:ABILITYPOOL|The Shining Light Of Pelor Rank|SLPAffiliationScore/100	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Character Level	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Cleric or paladin|PREMULT:1,[PRECLASS:1,Cleric=1],[PRECLASS:1,Paladin=1]	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Knowledge religion 5-9|PREMULT:2,[PRESKILL:1,Knowledge (Religion)=5],[!PRESKILL:1,Knowledge (Religion)=10]	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Knowledge religion 10|PRESKILL:1,Knowledge (Religion)=10	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Heal 5-9|PREMULT:2,[PRESKILL:1,Heal=5],[!PRESKILL:1,Heal=10]	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Heal 10|PRESKILL:1,Heal=10	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Will save 10|PRECHECK:1,Will=10	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Strength 20|PRESTAT:1,STR=20	ABILITY:Church|AUTOMATIC|Shining Light Of Pelor ~ Can cast heal|PREMULT:2,[PRESPELLTYPE:1,Divine=6],[PRESPELL:1,Heal]	DESC:Membership	SOURCEPAGE:p.6
 
 Character Level	KEY:Shining Light Of Pelor ~ Character Level	CATEGORY:Church	TYPE:Shining Light Of Pelor	BONUS:VAR|SLPAffiliationScore|100*floor(ECL/2)	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Character Level: +1/2 levels	SOURCEPAGE:p.22
+
+Cleric or paladin	KEY:Shining Light Of Pelor ~ Cleric or paladin	CATEGORY:Church	TYPE:Shining Light Of Pelor	PREMULT:1,[PRECLASS:1,Cleric=1],[PRECLASS:1,Paladin=1]	BONUS:VAR|SLPAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Cleric or paladin: +1	SOURCEPAGE:p.22
+
+Knowledge religion 5-9 ranks	KEY:Shining Light Of Pelor ~ Knowledge religion 5-9	CATEGORY:Church	TYPE:Shining Light Of Pelor	PREMULT:2,[PRESKILL:1,Knowledge (Religion)=5],[!PRESKILL:1,Knowledge (Religion)=10]	BONUS:VAR|SLPAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Knowledge (religion) 5-9 ranks: +1	SOURCEPAGE:p.22
+
+Knowledge religion 10 or more ranks	KEY:Shining Light Of Pelor ~ Knowledge religion 10	CATEGORY:Church	TYPE:Shining Light Of Pelor	PRESKILL:1,Knowledge (Religion)=10	BONUS:VAR|SLPAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Knowledge (religion) 10 or more ranks: +2	SOURCEPAGE:p.22
+
+Heal 5-9 ranks	KEY:Shining Light Of Pelor ~ Heal 5-9	CATEGORY:Church	TYPE:Shining Light Of Pelor	PREMULT:2,[PRESKILL:1,Heal=5],[!PRESKILL:1,Heal=10]	BONUS:VAR|SLPAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Heal 5-9 ranks: +1	SOURCEPAGE:p.22
+
+Heal 10 or more ranks	KEY:Shining Light Of Pelor ~ Heal 10	CATEGORY:Church	TYPE:Shining Light Of Pelor	PRESKILL:1,Heal=10	BONUS:VAR|SLPAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Heal 10 or more ranks: +2	SOURCEPAGE:p.22
+
+Will save bonus +10 or higher	KEY:Shining Light Of Pelor ~ Will save 10	CATEGORY:Church	TYPE:Shining Light Of Pelor	PRECHECK:1,Will=10	BONUS:VAR|SLPAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Will save bonus +10 or higher: +1	SOURCEPAGE:p.22
+
+Strength score of 20 or higher	KEY:Shining Light Of Pelor ~ Strength 20	CATEGORY:Church	TYPE:Shining Light Of Pelor	PRESTAT:1,STR=20	BONUS:VAR|SLPAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Strength bonus of 20 or higher: +1	SOURCEPAGE:p.22
+
+# FIXME: PRESPELL:1,Heal alone does not work, cleric level < 11 pass the requirement.
+# WORKAROUND: added PRESPELLTYPE:1,Divine=6 for clerics.
+# ISSUE: Other classes that can cast Heal are most likely broken.
+
+Can cast heal	KEY:Shining Light Of Pelor ~ Can cast heal	CATEGORY:Church	TYPE:Shining Light Of Pelor	PREMULT:2,[PRESPELLTYPE:1,Divine=6],[PRESPELL:1,Heal]	BONUS:VAR|SLPAffiliationScore|100*3	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Can cast heal: +3	SOURCEPAGE:p.22
+
+Has been undead	KEY:Shining Light Of Pelor ~ Has been undead	CATEGORY:Church	TYPE:Shining Light Of Pelor	BONUS:VAR|SLPAffiliationScore|100*-6	COST:0	PREABILITY:1,CATEGORY=Church,Shining Light Of Pelor ~ Membership	DESC:Has been undead: -6	SOURCEPAGE:p.22
 
 ###Block: The Shining Light Of Pelor (SLP), Multiple Use
 
