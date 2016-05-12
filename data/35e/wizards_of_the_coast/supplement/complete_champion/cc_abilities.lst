@@ -640,6 +640,9 @@ Shining Light Of Pelor Shining Light	KEY:Shining Light Of Pelor ~ Shining Light	
 
 ###Block: The Shining Light Of Pelor (SLP), Bonus
 
+Shining Light Of Pelor Novitiate of the Sun Bonus	KEY:Shining Light Of Pelor ~ Novitiate of the Sun Bonus	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	OUTPUTNAME:Shining Light Of Pelor Novitiate of the Sun	DESC:Gain a +2 bonus on Heal checks made to stabilize a dying creature.	SOURCEPAGE:P.23	ASPECT:SkillBonus|+2 bonus to Heal checks made to stabilize a dying creature.
+
+
 #======================================
 
 ###Block: The Temple Of True Aim (TTA), One Time
