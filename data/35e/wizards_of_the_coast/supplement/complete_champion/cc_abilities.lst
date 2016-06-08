@@ -380,6 +380,18 @@ Fharlanghn's Way Membership	KEY:Fharlanghn's Way ~ Membership	CATEGORY:Church	TY
 
 Character Level	KEY:Fharlanghn's Way ~ Character Level	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*floor(ECL/2)	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Character Level: +1/2 levels	SOURCEPAGE:p.14
 
+Knowledge geography 5 or more ranks	KEY:Fharlanghn's Way ~ Knowledge geography 5	CATEGORY:Church	TYPE:Fharlanghn's Way	PRESKILL:1,Knowledge (Geography)=5	BONUS:VAR|FWAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Knowledge (Geography) 5 or more ranks: +1	SOURCEPAGE:p.14
+
+Knowledge local 5 or more ranks	KEY:Fharlanghn's Way ~ Knowledge local 5	CATEGORY:Church	TYPE:Fharlanghn's Way	PRESKILL:1,Knowledge (Local)=5	BONUS:VAR|FWAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Knowledge (Local) 5 or more ranks: +1	SOURCEPAGE:p.14
+
+Knowledge the planes 5 or more ranks	KEY:Fharlanghn's Way ~ Knowledge planes 5	CATEGORY:Church	TYPE:Fharlanghn's Way	PRESKILL:1,Knowledge (The Planes)=5	BONUS:VAR|FWAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Knowledge (The Planes) 5 or more ranks: +1	SOURCEPAGE:p.14
+
+Entitled to reroll	KEY:Fharlanghn's Way ~ Entitled to reroll	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Is entitled to a reroll at least once per day through a spell, feat, or item: +1	SOURCEPAGE:p.14
+
+Speed spell	KEY:Fharlanghn's Way ~ Speed spell	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Can cast a spell that increases speed: +1/spell	SOURCEPAGE:p.14
+
+Saving throw spell	KEY:Fharlanghn's Way ~ Saving throw spell	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Can cast a spell that increases at least one saving throw modifier: +1/spell	SOURCEPAGE:p.14
+
 ###Block: Fharlanghn's Way (FW), Multiple Use
 
 ###Block: Fharlanghn's Way (FW), Rank
