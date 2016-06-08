@@ -392,7 +392,43 @@ Speed spell	KEY:Fharlanghn's Way ~ Speed spell	CATEGORY:Church	TYPE:Fharlanghn's
 
 Saving throw spell	KEY:Fharlanghn's Way ~ Saving throw spell	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Can cast a spell that increases at least one saving throw modifier: +1/spell	SOURCEPAGE:p.14
 
+Can cast teleport	KEY:Fharlanghn's Way ~ Teleport spell	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Can cast teleport: +1	SOURCEPAGE:p.14
+
+Can cast plane shift	KEY:Fharlanghn's Way ~ Plane Shift spell	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*3	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Can cast plane shift: +3	SOURCEPAGE:p.14
+
+Modes of mouvement	KEY:Fharlanghn's Way ~ Mouvement modes	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*3	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Has more than one mode of mouvement (such as a climb speed, the ability to fly, or the like): +3	SOURCEPAGE:p.14
+
+One month stay	KEY:Fharlanghn's Way ~ Stay month	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*-2	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Spends more than one month in a single place: -2	SOURCEPAGE:p.14
+
+One year stay	KEY:Fharlanghn's Way ~ Stay year	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*-4	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Spends more than one year in a single place: -4	SOURCEPAGE:p.14
+
 ###Block: Fharlanghn's Way (FW), Multiple Use
+
+Survives EL 3-4 higher	KEY:Fharlanghn's Way ~ Survive EL 3-4	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Survives an encounter with an EL 3-4 higher than own character level: +1	SOURCEPAGE:p.14
+
+Survives EL 5 higher	KEY:Fharlanghn's Way ~ Survive EL 5	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*2	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Survives an encounter with an EL 5 or more higher than own character level: +2	SOURCEPAGE:p.14
+
+Avoids a battle	KEY:Fharlanghn's Way ~ Avoids battle	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Avoids a battle as a result of careful preparation: +1	SOURCEPAGE:p.14
+
+Wins a battle	KEY:Fharlanghn's Way ~ Wins battle	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*4	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Wins a battle as a result of careful preparation: +4	SOURCEPAGE:p.14
+
+Wins impossible battle	KEY:Fharlanghn's Way ~ Wins impossible battle	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*8	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Wins a battle against seemingly insurmountable odds as a result of careful preparation: +8	SOURCEPAGE:p.14
+
+Converts a new member	KEY:Fharlanghn's Way ~ Convert	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Converts a new member: +1	SOURCEPAGE:p.14
+
+Find use for useless item	KEY:Fharlanghn's Way ~ Find use	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Finds a use for an item thought to be useless: +1	SOURCEPAGE:p.14
+
+Destroys a slave ring	KEY:Fharlanghn's Way ~ Destroys slave ring	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*4	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Destroys a slave ring: +4	SOURCEPAGE:p.14
+
+Discover area	KEY:Fharlanghn's Way ~ Discover area	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*8	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Discover an area never traveled before: +8	SOURCEPAGE:p.14
+
+Discover area and record voyage	KEY:Fharlanghn's Way ~ Discover and record	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*2	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Discover an area never traveled before and records the voyage: +2	SOURCEPAGE:p.14
+
+One week stay	KEY:Fharlanghn's Way ~ Stay week	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*3	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Spends no more than 1 week in a single place for an entire year: +3	SOURCEPAGE:p.14
+
+Incarcerates or enslave	KEY:Fharlanghn's Way ~ Incarcerator	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*-15	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Incarcerates or enslaves another creature: -15	SOURCEPAGE:p.14
+
+Fails to defend church	KEY:Fharlanghn's Way ~ Fails church	CATEGORY:Church	TYPE:Fharlanghn's Way	BONUS:VAR|FWAffiliationScore|100*-6	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Fharlanghn's Way ~ Membership	DESC:Fails to defend a structure or item important to the church: -6	SOURCEPAGE:p.14
 
 ###Block: Fharlanghn's Way (FW), Rank
 
