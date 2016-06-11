@@ -432,7 +432,26 @@ Fails to defend church	KEY:Fharlanghn's Way ~ Fails church	CATEGORY:Church	TYPE:
 
 ###Block: Fharlanghn's Way (FW), Rank
 
+# Absolute cost 4, 12, 21, 30
+# Incremental cost 4, 8, 9, 9
+
+Fharlanghn's Way Vagabond	KEY:Fharlanghn's Way ~ Vagabond	CATEGORY:Church Rank	TYPE:Fharlanghn's Way	COST:4	ABILITY:Special Ability|AUTOMATIC|Fharlanghn's Way ~ Vagabond Bonus	DESC:Gain a +2 bonus on sense motive checks.	SOURCEPAGE:p.15
+
+Fharlanghn's Way Wanderer	KEY:Fharlanghn's Way ~ Wanderer	CATEGORY:Church Rank	TYPE:Fharlanghn's Way	COST:8	PREABILITY:1,CATEGORY=Church Rank,Fharlanghn's Way ~ Vagabond	ABILITY:Special Ability|AUTOMATIC|Fharlanghn's Way ~ Wanderer Bonus	DESC:Gain a +2 bonus on checks made to resist a grapple, trip, or bull rush attempt.	SOURCEPAGE:p.15
+
+Fharlanghn's Way Explorer	KEY:Fharlanghn's Way ~ Explorer	CATEGORY:Church Rank	TYPE:Fharlanghn's Way	COST:9	PREABILITY:1,CATEGORY=Church Rank,Fharlanghn's Way ~ Wanderer	ABILITY:Special Ability|AUTOMATIC|Fharlanghn's Way ~ Explorer Bonus	DESC:Once per day, gain a bonus equals to +1 per three character levels on one saving throw.	SOURCEPAGE:p.15
+
+Fharlanghn's Way Traveler of Worlds	KEY:Fharlanghn's Way ~ Traveler	CATEGORY:Church Rank	TYPE:Fharlanghn's Way	COST:9	PREABILITY:1,CATEGORY=Church Rank,Fharlanghn's Way ~ Explorer	ABILITY:Special Ability|AUTOMATIC|Fharlanghn's Way ~ Traveler Bonus	DESC:Once per day, become etheral for 1 round per three character level as a spell-like ability (caster level equals your character level).	SOURCEPAGE:p.15
+
 ###Block: Fharlanghn's Way (FW), Bonus
+
+Fharlanghn's Way Vagabond Bonus	KEY:Fharlanghn's Way ~ Vagabond Bonus	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	OUTPUTNAME:Fharlanghn's Way Vagabond	DESC:Gain a +2 bonus on sense motive checks.	SOURCEPAGE:P.15	BONUS:SKILL|Sense motive|2
+
+Fharlanghn's Way Wanderer Bonus	KEY:Fharlanghn's Way ~ Wanderer Bonus	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	OUTPUTNAME:Fharlanghn's Way Wanderer	DESC:Gain a +2 bonus on checks made to resist a grapple, trip, or bull rush attempt.	SOURCEPAGE:P.15
+
+Fharlanghn's Way Explorer Bonus	KEY:Fharlanghn's Way ~ Explorer Bonus	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	OUTPUTNAME:Fharlanghn's Way Explorer	DESC:Once per day, gain a bonus equals to +1 per three character levels on one saving throw.	SOURCEPAGE:P.15
+
+Fharlanghn's Way Traveler of Worlds Bonus	KEY:Fharlanghn's Way ~ Traveler Bonus	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	OUTPUTNAME:Fharlanghn's Way Traveler of Worlds	DESC:Once per day, become etheral for 1 round per three character level as a spell-like ability (caster level equals your character level).	SOURCEPAGE:P.15
 
 #======================================
 
