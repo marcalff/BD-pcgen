@@ -362,11 +362,94 @@ Character Level	KEY:Brotherhood Of Equals ~ Character Level	CATEGORY:Church	TYPE
 
 ###Block: The Eternal Library (EL), One Time
 
-The Eternal Library Membership	KEY:Eternal Library ~ Membership	CATEGORY:Church	TYPE:Eternal Library	PREDEITY:1,Boccob	DEFINE:ELAffiliationScore|0	COST:0	BONUS:ABILITYPOOL|The Eternal Library Rank|ELAffiliationScore/100	ABILITY:Church|AUTOMATIC|Eternal Library ~ Character Level	DESC:Membership	SOURCEPAGE:p.6
+# Note that PREDEITY:1,Boccob is not required for membership, see page 12.
+
+The Eternal Library Membership	KEY:Eternal Library ~ Membership	CATEGORY:Church	TYPE:Eternal Library	DEFINE:ELAffiliationScore|0	COST:0	BONUS:ABILITYPOOL|The Eternal Library Rank|ELAffiliationScore/100	ABILITY:Church|AUTOMATIC|Eternal Library ~ Character Level	DESC:Membership	SOURCEPAGE:p.6
 
 Character Level	KEY:Eternal Library ~ Character Level	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*floor(ECL/2)	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Character Level: +1/2 levels	SOURCEPAGE:p.13
 
+Knowledge Arcana 5-9	KEY:Eternal Library ~ Knowledge Arcana 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (Arcana)=5],[!PRESKILL:1,Knowledge (Arcana)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge Arcana 10	KEY:Eternal Library ~ Knowledge Arcana 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Arcana)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge Architecture and Engineering 5-9	KEY:Eternal Library ~ Knowledge Architecture and Engineering 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (Architecture and Engineering)=5],[!PRESKILL:1,Knowledge (Architecture and Engineering)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge Architecture and Engineering 10	KEY:Eternal Library ~ Knowledge Architecture and Engineering 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Architecture and Engineering)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge Dungeoneering 5-9	KEY:Eternal Library ~ Knowledge Dungeoneering 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (Dungeoneering)=5],[!PRESKILL:1,Knowledge (Dungeoneering)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge Dungeoneering 10	KEY:Eternal Library ~ Knowledge Dungeoneering 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Dungeoneering)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge Geography 5-9	KEY:Eternal Library ~ Knowledge Geography 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (Geography)=5],[!PRESKILL:1,Knowledge (Geography)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge Geography 10	KEY:Eternal Library ~ Knowledge Geography 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Geography)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge History 5-9	KEY:Eternal Library ~ Knowledge History 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (History)=5],[!PRESKILL:1,Knowledge (History)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge History 10	KEY:Eternal Library ~ Knowledge History 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (History)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge Nature 5-9	KEY:Eternal Library ~ Knowledge Nature 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (Nature)=5],[!PRESKILL:1,Knowledge (Nature)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge Nature 10	KEY:Eternal Library ~ Knowledge Nature 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Nature)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge Nobility and Royalty 5-9	KEY:Eternal Library ~ Knowledge Nobility and Royalty 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (Nobility and Royalty)=5],[!PRESKILL:1,Knowledge (Nobility and Royalty)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge Nobility and Royalty 10	KEY:Eternal Library ~ Knowledge Nobility and Royalty 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Nobility and Royalty)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge Religion 5-9	KEY:Eternal Library ~ Knowledge Religion 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (Religion)=5],[!PRESKILL:1,Knowledge (Religion)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge Religion 10	KEY:Eternal Library ~ Knowledge Religion 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Religion)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge The Planes 5-9	KEY:Eternal Library ~ Knowledge The Planes 5-9	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESKILL:1,Knowledge (The Planes)=5],[!PRESKILL:1,Knowledge (The Planes)=10]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 5-9 ranks: +1/skill	SOURCEPAGE:p13.
+
+Knowledge The Planes 10	KEY:Eternal Library ~ Knowledge The Planes 10	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (The Planes)=10	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Knowledge (any) 10 or more ranks: +2/skill	SOURCEPAGE:p.13
+
+Knowledge Bluff 5	KEY:Eternal Library ~ Knowledge Bluff 5	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Bluff)=5	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Bluff, Disguise, or Hide 5 or more ranks: +1/skill	SOURCEPAGE:p.13
+
+Knowledge Disguise 5	KEY:Eternal Library ~ Knowledge Disguise 5	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Disguise)=5	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Bluff, Disguise, or Hide 5 or more ranks: +1/skill	SOURCEPAGE:p.13
+
+Knowledge Hide 5	KEY:Eternal Library ~ Knowledge Hide 5	CATEGORY:Church	TYPE:Eternal Library	PRESKILL:1,Knowledge (Hide)=5	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Bluff, Disguise, or Hide 5 or more ranks: +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge Arcana	KEY:Eternal Library ~ Skill Focus Arcana	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (Arcana))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+Skill Focus Knowledge Architecture and Engineering	KEY:Eternal Library ~ Skill Focus Architecture and Engineering	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (Architecture and Engineering))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge Dungeoneering	KEY:Eternal Library ~ Skill Focus Dungeoneering	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (Dungeoneering))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge Geography	KEY:Eternal Library ~ Skill Focus Geography	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (Geography))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge History	KEY:Eternal Library ~ Skill Focus History	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (History))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge Nature	KEY:Eternal Library ~ Skill Focus Nature	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (Nature))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge Nobility and Royalty	KEY:Eternal Library ~ Skill Focus Nobility and Royalty	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (Nobility and Royalty))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge Religion	KEY:Eternal Library ~ Skill Focus Religion	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (Religion))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Skill Focus Knowledge The Planes	KEY:Eternal Library ~ Skill Focus The Planes	CATEGORY:Church	TYPE:Eternal Library	PREABILITY:1,CATEGORY=FEAT,Skill Focus (Knowledge (The Planes))	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Skill Focus (Knowledge [any]): +1/skill	SOURCEPAGE:p.13
+
+Spell level 3 or 4	KEY:Eternal Library ~ Spell 3 4	CATEGORY:Church	TYPE:Eternal Library	PREMULT:2,[PRESPELLTYPE:1,Arcane=3,Divine=3],[!PRESPELLTYPE:1,Arcane=5,Divine=5]	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Can cast 3rd- or 4th-level spells: +1	SOURCEPAGE:p.13
+
+Spell level 5	KEY:Eternal Library ~ Spell 5	CATEGORY:Church	TYPE:Eternal Library	PRESPELLTYPE:1,Arcane=5,Divine=5	BONUS:VAR|ELAffiliationScore|100*2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Can cast 5th-level spells: +2	SOURCEPAGE:p.13
+
+Loremaster	KEY:Eternal Library ~ Loremaster	CATEGORY:Church	TYPE:Eternal Library	PRECLASS:1,Loremaster=1	BONUS:VAR|ELAffiliationScore|100*1	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Has one or more level in the loremaster prestige class: +1	SOURCEPAGE:p.13
+
+Is illiterate	KEY:Eternal Library ~ Illiterate	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*-4	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Is illiterate: -4	SOURCEPAGE:p.13
+
+Lacks Knowledge	KEY:Eternal Library ~ Lacks Knowledge	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*-2	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Lacks ranks in any Knowledge skill: -2	SOURCEPAGE:p.13
+
 ###Block: The Eternal Library (EL), Multiple Use
+
+Turns battle	KEY:Eternal Library ~ Turns battle	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Turns the tide of a battle by identifying an enemy creature's weakness with a Knowledge check: +1	SOURCEPAGE:p.13
+
+Recover Knowledge	KEY:Eternal Library ~ Recover Knowledge	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*2	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Recovers an ancient, previously lost peoce of knowledge (such as a new spell): +2	SOURCEPAGE:p.13
+
+Work for Church	KEY:Eternal Library ~ Work for Church	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*4	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Spends at least 1 month creating magic items for the church: +4	SOURCEPAGE:p.13
+
+Discover Power	KEY:Eternal Library ~ Discover Power	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*4	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Discovers a new source of magical power: +4	SOURCEPAGE:p.13
+
+Create Magic	KEY:Eternal Library ~ Create Magic	CATEGORY:Church	TYPE:Eternal Library	BONUS:VAR|ELAffiliationScore|100*1	MULT:YES	STACK:YES	CHOOSE:NOCHOICE	COST:0	PREABILITY:1,CATEGORY=Church,Eternal Library ~ Membership	DESC:Creates a new spell or magic item: +1	SOURCEPAGE:p.13
+
+# TODO
 
 ###Block: The Eternal Library (EL), Rank
 
