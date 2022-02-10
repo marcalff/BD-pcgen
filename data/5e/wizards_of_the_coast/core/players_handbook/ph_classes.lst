@@ -142,8 +142,8 @@ CLASS:Cleric	SPELLSTAT:WIS	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVE
 CLASS:Druid		HD:8		TYPE:PC.Base	DEFINE:DruidLVL|0	AUTO:LANG|Druidic	BONUS:VAR|DruidLVL|CL	BONUS:VAR|SpellCasterTotalLVL|DruidLVL	BONUS:VAR|SpellCasterClassCount|1	FACT:SpellType|Divine	FACT:SpellType|Divine
 # Class Name	Multiple Requirements
 CLASS:Druid		PREMULT:1,[!PRETEMPLATE:1,First Level],[PREABILITY:1,CATEGORY=Internal,Multiclass Allowed ~ Druid],[PRECLASS:1,Druid=1]
-# Class Name	Spell Stat					Memorize		Automatically Known Spell Levels									Caster level
-CLASS:Druid		SPELLSTAT:WIS	SPELLSTAT:WIS	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	BONUS:CASTERLEVEL|Druid|CL
+# Class Name	Spell Stat		Memorize		Automatically Known Spell Levels									Caster level
+CLASS:Druid		SPELLSTAT:WIS	MEMORIZE:YES	KNOWNSPELLS:LEVEL=1|LEVEL=2|LEVEL=3|LEVEL=4|LEVEL=5|LEVEL=6|LEVEL=7|LEVEL=8|LEVEL=9	BONUS:CASTERLEVEL|Druid|CL
 ###Block
 1:REPEATLEVEL:1	DONOTADD:SKILLPOINTS
 ###Block: Abilities
@@ -301,20 +301,20 @@ CLASS:Ranger	SPELLSTAT:WIS	MEMORIZE:NO	BONUS:CASTERLEVEL|Ranger|CL
 ###Block: Abilities
 1	ABILITY:Class|AUTOMATIC|Ranger
 ###Block
-1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Favored Enemy
-1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Natural Explorer
-2	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Fighting Style
-2	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Spellcasting
-2	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Spell Slots
-3	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Ranger Archetype
-3	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Primeval Awareness
-4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Ability Score Improvement
-5	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Extra Attack
-8	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Land's Stride
-10	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Hide in Plain Sight
-14	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Vanish
-18	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Feral Senses
-20	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Foe Slayer
+1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Favored Enemy|!PREFACT:1,ABILITIES,AltRanger=true
+1	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Natural Explorer|!PREFACT:1,ABILITIES,AltRanger=true
+2	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Fighting Style|!PREFACT:1,ABILITIES,AltRanger=true
+2	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Spellcasting|!PREFACT:1,ABILITIES,AltRanger=true
+2	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Spell Slots|!PREFACT:1,ABILITIES,AltRanger=true
+3	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Ranger Archetype|!PREFACT:1,ABILITIES,AltRanger=true
+3	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Primeval Awareness|!PREFACT:1,ABILITIES,AltRanger=true
+4	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Ability Score Improvement|!PREFACT:1,ABILITIES,AltRanger=true
+5	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Extra Attack|!PREFACT:1,ABILITIES,AltRanger=true
+8	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Land's Stride|!PREFACT:1,ABILITIES,AltRanger=true
+10	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Hide in Plain Sight|!PREFACT:1,ABILITIES,AltRanger=true
+14	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Vanish|!PREFACT:1,ABILITIES,AltRanger=true
+18	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Feral Senses|!PREFACT:1,ABILITIES,AltRanger=true
+20	ABILITY:Ranger Class Feature|AUTOMATIC|Ranger ~ Foe Slayer|!PREFACT:1,ABILITIES,AltRanger=true
 ###Block
 2	CAST:99,RangerCast1
 3	CAST:99,RangerCast1

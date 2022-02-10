@@ -3,14 +3,19 @@ CAMPAIGN:Champions of Valor
 GAMEMODE:35e|Bahamut35e
 TYPE:Wizards of the Coast.Campaign Setting.Forgotten Realms
 PRECAMPAIGN:4,INCLUDES=Player's Guide to Faerun,INCLUDES=Spell Compendium,INCLUDES=Complete Warrior,INCLUDES=Magic of Faerun
-RANK:3
+
 SOURCELONG:Champions of Valor
 SOURCESHORT:CV
 SOURCEDATE:2005-11
+RANK:200511
 ISOGL:NO
 COPYRIGHT:Champions of Valor - Wizards of the Coast (November 2005)
 STATUS:ALPHA
 INFOTEXT:Champions of Valor add-ons
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../../_artwork/cover_35e_wotc_cv.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../../_artwork/logo_wotc.png
 
 ABILITY:cv_abilities.lst
 ABILITYCATEGORY:cv_abilitycategories.lst

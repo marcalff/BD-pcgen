@@ -1,7 +1,7 @@
 # CVS $Revision$ $Author$ -- Sun May 19 00:52:28 2013 -- reformated by prettylst.pl v1.50 (build 19967)
 CAMPAIGN:Races of Faerun
 KEY:Races of Faerun (35e)
-RANK:3
+
 GAMEMODE:35e|Bahamut35e
 GENRE:Fantasy
 BOOKTYPE:Setting Supplement
@@ -14,7 +14,12 @@ PUBNAMESHORT:WotC
 SOURCELONG:Races of Faerun
 SOURCESHORT:Rac
 SOURCEDATE:2004-03
+RANK:200403
 ISOGL:NO
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../../_artwork/cover_35e_wotc_rac.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../../_artwork/logo_wotc.png
 
 #
 #Races of Faerun
@@ -22,9 +27,11 @@ ISOGL:NO
 
 
 ABILITY:rac_abilities.lst
+ABILITYCATEGORY:rac_abilitycategories.lst
 # CLASSes are all EPIC level, so need other epic rules first
 #CLASS:rac_classes.lst  # TODO - PRE INCLUDES Epic...
 BIOSET:rac_biosettings.lst
+CLASS:rac_classes.lst
 COMPANIONMOD:rac_companionmods.lst
 # Flight Arrow and Signal Arrow are in Arms and Equipment Guide
 EQUIPMENT:rac_equip.lst|(EXCLUDE:Arrow (Flight)|Arrow (Signal))|PRECAMPAIGN:1,Arms and Equipment Guide|!PRECAMPAIGN:1,Complete Adventurer

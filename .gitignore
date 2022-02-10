@@ -1,5 +1,6 @@
 *.DS_Store
 *.ini
+Thumbs.db
 
 batch-convert.jar
 plugins/*.jar
@@ -36,3 +37,7 @@ pcgen-batch-convert.jar
 /.settings/
 /variable_report.csv
 /variable_report.html
+
+*.un~
+*.pcc~
+*.lst~

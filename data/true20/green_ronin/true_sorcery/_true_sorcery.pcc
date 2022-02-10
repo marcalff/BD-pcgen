@@ -4,11 +4,12 @@ GAMEMODE:True20
 TYPE:Green Ronin.Supplement
 BOOKTYPE:Supplement
 SETTING:Fantasy
-RANK:2
+
 SOURCELONG:True Sorcery
 SOURCESHORT:TS
 SOURCEWEB:www.greenronin.com
 SOURCEDATE:2007-03
+RANK:200703
 ISOGL:YES
 COPYRIGHT:Green Ronin
 
@@ -17,6 +18,10 @@ ABILITY:ts_feats.lst
 ABILITYCATEGORY:ts_abilitycategories.lst
 CLASS:ts_classes.lst
 SKILL:ts_skills.lst
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../_artwork/cover_t20_grp_ts.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../_artwork/logo_grp.png
 
 INFOTEXT:Supports 6.4.1
 # ENTRY DATE: 2015-01 (Unknown)
