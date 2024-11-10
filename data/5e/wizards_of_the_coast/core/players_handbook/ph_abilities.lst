@@ -98,7 +98,15 @@ Dwarf Base ~ Default	CATEGORY:Internal	TYPE:Race Base	PRERACE:1,Dwarf	BONUS:ABIL
 
 Racial Traits ~ Elf											CATEGORY:Internal
 
-Elf Base ~ Default	CATEGORY:Internal	TYPE:Race Base	PRERACE:1,Elf		BONUS:ABILITYPOOL|Elf Subrace|1	ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Ability Score Increase		ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Darkvision				ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Keen Senses				ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Fey Ancestry				ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Trance					ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Languages			BONUS:STAT|DEX|2|TYPE=Racial
+Elf Base ~ Default	CATEGORY:Internal	TYPE:Race Base	PRERACE:1,Elf		BONUS:ABILITYPOOL|Elf Subrace|1
+CATEGORY=Internal|Elf Base ~ Default.MOD	ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Ability Score Increase|!PREFACT:1,ABILITIES,Elf_AbilityScoreIncrease=true
+CATEGORY=Internal|Elf Base ~ Default.MOD	ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Darkvision|!PREFACT:1,ABILITIES,Elf_Darkvision=true
+CATEGORY=Internal|Elf Base ~ Default.MOD	ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Keen Senses|!PREFACT:1,ABILITIES,Elf_KeenSenses=true
+CATEGORY=Internal|Elf Base ~ Default.MOD	ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Fey Ancestry|!PREFACT:1,ABILITIES,Elf_FeyAncestry=true
+CATEGORY=Internal|Elf Base ~ Default.MOD	ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Trance|!PREFACT:1,ABILITIES,Elf_Trance=true
+CATEGORY=Internal|Elf Base ~ Default.MOD	ABILITY:Elf Race Trait|AUTOMATIC|Elf ~ Languages|!PREFACT:1,ABILITIES,Elf_Languages=true
+
+
 Racial Traits ~ Halfling												CATEGORY:Internal																																																																																		ABILITY:Halfling Race Trait|AUTOMATIC|TYPE=Base Halfling Race Trait																	BONUS:ABILITYPOOL|Halfling Subrace|1	BONUS:STAT|DEX|2|TYPE=Racial
 Racial Traits ~ Human													CATEGORY:Internal		
 
@@ -146,7 +154,7 @@ Dwarven Armor Training					KEY:Mountain Dwarf ~ Dwarven Armor Training	SORTKEY:1
 
 ###Block: Elf
 # Ability Name		Unique Key						SORTKEY		Category of Ability		Type								Define				Innate Spells																												Description																																																																		Template			Ability																																																	Bonus Ability Pool				Add to base move			Stat bonus				Modify VAR						Source Page
-Ability Score Increase	KEY:Elf ~ Ability Score Increase		SORTKEY:1_Race	CATEGORY:Special Ability	TYPE:Race Trait.Elf Race Trait.Base Elf Race Trait.SpecialQuality																																				DESC:Your Dexterity score increases by 2.																																																																																																																																											SOURCEPAGE:p.23
+Ability Score Increase	KEY:Elf ~ Ability Score Increase		SORTKEY:1_Race	CATEGORY:Special Ability	TYPE:Race Trait.Elf Race Trait.Base Elf Race Trait.SpecialQuality																																				DESC:Your Dexterity score increases by 2.																																																																																																																																											SOURCEPAGE:p.23	BONUS:STAT|DEX|2|TYPE=Racial
 Darkvision			KEY:Elf ~ Darkvision				SORTKEY:1_Race	CATEGORY:Special Ability	TYPE:Race Trait.Elf Race Trait.Base Elf Race Trait.SpecialQuality																																				DESC:Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.																																																																																												BONUS:VAR|DarkvisionRange|60|TYPE=Base	SOURCEPAGE:p.23
 Keen Senses			KEY:Elf ~ Keen Senses				SORTKEY:1_Race	CATEGORY:Special Ability	TYPE:Race Trait.Elf Race Trait.Base Elf Race Trait.SpecialQuality																																				DESC:You have proficiency in the Perception skill.																																																															ABILITY:Skill|AUTOMATIC|Perception																																																																					SOURCEPAGE:p.23
 Fey Ancestry		KEY:Elf ~ Fey Ancestry				SORTKEY:1_Race	CATEGORY:Special Ability	TYPE:Race Trait.Elf Race Trait.Base Elf Race Trait.SpecialQuality																																				DESC:You have advantage on saving throws against being charmed, and magic can't put you to sleep.																																																																																																																																	SOURCEPAGE:p.23
@@ -1744,9 +1752,9 @@ CATEGORY=Special Ability|Ranger ~ Spellcasting.MOD																														
 CATEGORY=Special Ability|Ranger ~ Spellcasting.MOD	BONUS:ABILITYPOOL|Ranger Known Progression Selection|1
 
 ###Block: Choose Ranger Known Progression
-Grant Highest Known only	KEY:Ranger Known Progression ~ Grant Highest Known only			CATEGORY:Internal			TYPE:Choose Ranger Known Progression	DESC:This will manipulate your spells known to increase to the max highest allowed by the rules.
-Follow Standard Progression	KEY:Ranger Known Progression ~ Follow Standard Progression		CATEGORY:Internal			TYPE:Choose Ranger Known Progression	DESC:This will follow the progression chart in the Player's Handbook.
-Choose Own Progression		KEY:Ranger Known Progression ~ Choose Own Progression			CATEGORY:Internal			TYPE:Choose Ranger Known Progression	DESC:This will force the user to select spells each level.	BONUS:ABILITYPOOL|Ranger Known|if(RangerLVL>=2,2,0)+(RangerLVL>=3)+(RangerLVL>=5)+(RangerLVL>=7)+(RangerLVL>=9)+(RangerLVL>=11)+(RangerLVL>=13)+(RangerLVL>=15)+(RangerLVL>=17)
+Grant Highest Known only	KEY:Ranger Known Progression ~ Grant Highest Known only		CATEGORY:Internal			TYPE:Ranger Known Progression	DESC:This will manipulate your spells known to increase to the max highest allowed by the rules.
+Follow Standard Progression	KEY:Ranger Known Progression ~ Follow Standard Progression		CATEGORY:Internal			TYPE:Ranger Known Progression	DESC:This will follow the progression chart in the Player's Handbook.
+Choose Own Progression		KEY:Ranger Known Progression ~ Choose Own Progression			CATEGORY:Internal			TYPE:Ranger Known Progression	DESC:This will force the user to select spells each level.	BONUS:ABILITYPOOL|Ranger Known|if(RangerLVL>=2,2,0)+(RangerLVL>=3)+(RangerLVL>=5)+(RangerLVL>=7)+(RangerLVL>=9)+(RangerLVL>=11)+(RangerLVL>=13)+(RangerLVL>=15)+(RangerLVL>=17)
 
 # Grant Highest Known
 CATEGORY=Internal|Ranger Known Progression ~ Grant Highest Known only.MOD	BONUS:VAR|RangerKnown1|if(RangerLVL>=2,2,0)+(RangerLVL>=3)-(RangerLVL>=5)-(RangerLVL>=6)-(RangerLVL>=7)
